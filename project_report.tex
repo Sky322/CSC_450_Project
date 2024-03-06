@@ -1,0 +1,201 @@
+\documentclass[12pt]{article}
+\usepackage{url}
+\usepackage{setspace}               
+\usepackage[superscript]{cite}      
+\usepackage{graphicx}               
+\usepackage[normalem]{ulem}   		
+\graphicspath{ {Figures/} }         
+\usepackage{caption} 
+\usepackage{cite}
+\usepackage{indentfirst} 
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{amsmath}  				
+\textwidth=6.5in                    
+\oddsidemargin=0.0in                
+\usepackage{listings}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\pagestyle{fancy}
+\fancyhf{}
+\usepackage[most]{tcolorbox}
+
+\definecolor{maroon}{rgb}{0.5, 0.0, 0.0}
+\definecolor{subseccolor}{rgb}{0.68, 0.87, 0.68}
+\definecolor{featcolor}{rgb}{1.0, 0.64, 0.26}
+
+\newtcolorbox{sectionbox}[2][]{%
+  attach boxed title to top center = {yshift=-8pt},
+  colback      = blue!5!white,
+  colframe     = maroon,
+  fonttitle    = \bfseries,
+  colbacktitle = maroon,
+  title        = #2,#1,
+  enhanced,
+}
+
+\newtcolorbox{subsectionbox}[2][]{%
+  attach boxed title to top center = {yshift=-8pt},
+  colback      = blue!5!white,
+  colframe     = maroon,
+  fonttitle    = \bfseries,
+  colbacktitle = subseccolor,
+  coltitle     = blue!20!black,
+  title        = #2,#1,
+  enhanced,
+}
+
+
+\newtcolorbox{featurebox}[2][]{%
+  attach boxed title to top center = {yshift=-8pt},
+  colback      = blue!5!white,
+  colframe     = maroon,
+  fonttitle    = \bfseries,
+  colbacktitle = featcolor,
+  coltitle     = blue!20!black,
+  title        = #2,#1,
+  enhanced,
+}
+
+
+\lhead{Distributed Attention Assessment Software for Educational Environments}
+\rhead{Page \thepage}
+
+\usepackage{color}   
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    citecolor=black,
+    linktoc=all, 
+    linkcolor=black,
+}
+
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} 
+
+\begin{minipage}[b]{0.12\textwidth}
+\includegraphics[width=2.0cm]{figures/bear.png}
+\end{minipage}
+\begin{minipage}[b]{0.72\textwidth}
+\centering
+\textsc{\LARGE Missouri State University\\~\\Department computer Science}
+\end{minipage}
+\begin{minipage}[b]{0.12\textwidth}
+\includegraphics[width=2.0cm]{figures/bear.png}
+\end{minipage}
+\vspace{1.0cm}
+\center
+\HRule \\[0.4cm]
+{ \huge \bfseries Distributed Attention Assessment\\ Software for Educational\\[0.4cm] Environments}\\[0.4cm] 
+\HRule \\[1.5cm]
+
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+Member 1 \\ Member 2 \\ Member 3 \\ Memeber 4  
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+Supervisor \\ 
+Dr. Belkhouche
+\end{flushright}
+\end{minipage}\\[2cm]
+
+{\large \today}\\[2cm] 
+
+\end{titlepage}
+
+\newpage
+%-----------------------------------------------------------------------
+\tableofcontents
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+1   Project Description \\ 2    Software Development
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+2 \\ 3
+\end{flushright}
+\end{minipage}\\
+\newpage
+%----------------------------------------------------------------------
+
+%-----------------------------------------------------------------------------
+\begin{flushleft} \large
+1   Project Description 
+\end{flushleft}
+\begin{sectionbox}[colback=white]{Project Description}
+\begin{subsectionbox}[colback=white]{Project Summary}
+Classroom assistance software that assesses class engagement, creating speech
+transcripts and comparing them with engagement based on metrics of visual distraction, noise level, etc., and gives data of points where attention was low/high.
+\end{subsectionbox}
+
+\begin{subsectionbox}[colback=white]{Software Features}
+\begin{featurebox}[colback=white]{Feature 1}
+Utilize computer vision to recognize movement and gaze detection
+\end{featurebox}
+\begin{featurebox}[colback=white]{Feature 2}
+Observe and log dynamic changes in movement, class volume levels, and directed focus(a.k.a distraction)
+\end{featurebox}
+\begin{featurebox}[colback=white]{Feature 3}
+User interface that presents data and analysis understandably, aesthetically, and with adjustable sensitivity to certain stimuli
+\end{featurebox}
+\begin{featurebox}[colback=white]{Feature 4}
+Utilize machine learning to increase the accuracy of gaze detection
+\end{featurebox}
+\end{subsectionbox}
+\end{sectionbox}
+\newpage
+\begin{flushleft} \large
+2    Software Development
+\end{flushleft}
+
+\begin{sectionbox}[colback=white]{Product Backlog}
+\begin{subsectionbox}[colback=white]{Features}
+\begin{featurebox}[colback=white]{F1}
+Build database to store user data and focus metrics
+\end{featurebox}
+\begin{featurebox}[colback=white]{F2}
+improve gaze detection to implement an estimation line for visual representation
+\end{featurebox}
+\begin{featurebox}[colback=white]{F3}
+build distributed system communication system
+\end{featurebox}
+\begin{featurebox}[colback=white]{F4}
+Collect data for machine learning
+\end{featurebox}
+\begin{featurebox}[colback=white]{F5}
+test distributed communication system
+\end{featurebox}
+\begin{featurebox}[colback=white]{F6}
+build UI
+\end{featurebox}
+% \begin{featurebox}[colback=white]{F7}
+
+% \end{featurebox}
+\end{subsectionbox}
+\end{sectionbox}
+
+\begin{sectionbox}[colback=white]{Sprint 1 Backlog}
+\begin{subsectionbox}[colback=white]{Features}
+\begin{featurebox}[colback=white]{F1}
+Build database to store user data and focus metrics
+\end{featurebox}
+\begin{featurebox}[colback=white]{F4}
+improve gaze detection to implement an estimation line for visual representation
+\end{featurebox}
+\begin{featurebox}[colback=white]{F5}
+build distributed system communication system
+\end{featurebox}
+\end{subsectionbox}
+\end{sectionbox}
+
+\end{document}
