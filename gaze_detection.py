@@ -59,6 +59,8 @@ while cap.isOpened():
             y = angles[1] * 360
             z = angles[2] * 360
 
+            //add variable to store where person is looking
+        
             if y < -10:
                 text = "looking left"
             elif y > 10:
