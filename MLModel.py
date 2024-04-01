@@ -1,5 +1,4 @@
 import os
-import pickle
 
 from skimage.io import imread
 from skimage.transform import resize
@@ -48,4 +47,4 @@ score = accuracy_score(y_prediction, y_test)
 
 print('{}% of samples were correctly classified'.format(str(score * 100)))
 
-# pickle.dump(best_estimator, open('./model.p', 'wb'))
+

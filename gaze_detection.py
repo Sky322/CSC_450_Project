@@ -2,6 +2,9 @@ import cv2
 import mediapipe as mp
 import numpy as np
 
+currentData = []
+count = 0
+timer = 60
 mp_face_mesh = mp.solutions.face_mesh
 face_mesh = mp_face_mesh.FaceMesh(min_detection_confidence=0.5, min_tracking_confidence=0.5)
 
@@ -60,17 +63,6 @@ while cap.isOpened():
             z = angles[2] * 360
 
             #add variable to store where person is looking
-        
-            if y < -10:
-                text = "looking left"
-            elif y > 10:
-                text = "looking Right"
-            elif x < -10:
-                text = "looking Down"
-            elif x > 10:
-                text = "looking Up"
-            else:
-                text = "center"
 
             nose_3d_projection, jacobian = cv2.projectPoints(nose_3d, rot_vec, trans_vec, cam_matrix, dist_matrix)
 
@@ -79,14 +71,18 @@ while cap.isOpened():
 
             cv2.line(img, p1, p2, (255,0,0), 3)
 
-            cv2.putText(img, text, (20, 50), cv2.FONT_HERSHEY_PLAIN, 2, (0,255,0), 2)
-
         mp_drawing.draw_landmarks(
                 image=img,
                 landmark_list = face_landmarks,
                 landmark_drawing_spec=drawing_spec,
                 connection_drawing_spec=drawing_spec)
     cv2.imshow('Head Pose Estimation', img)
+
+    timer -= 1
+    if timer <= 0:
+        cv2.imwrite('currentData/photo'+str(count)+'.jpg',img)
+        count+= 1
+        timer = 60
     if cv2.waitKey(5) & 0xFF == 27:
         break
 cap.release()
