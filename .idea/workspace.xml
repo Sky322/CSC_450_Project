@@ -4,14 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2902a2d-6d8d-4d1b-9f5d-190ab32ebc25" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/CSC_450_Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gaze_detection.py" afterDir="false" />
+    <list default="true" id="f2902a2d-6d8d-4d1b-9f5d-190ab32ebc25" name="Changes" comment="gazeDetection implement head pose estimation">
+      <change afterPath="$PROJECT_DIR$/MLModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/center/WIN_20240401_05_43_52_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/center/WIN_20240401_05_43_53_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/center/WIN_20240401_05_43_54_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/down/WIN_20240401_05_44_27_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/down/WIN_20240401_05_44_29_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/down/WIN_20240401_05_44_30_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/down/WIN_20240401_05_44_31_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/down/WIN_20240401_05_44_32_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/down/WIN_20240401_05_44_33_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/down/WIN_20240401_05_44_35_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/down/WIN_20240401_05_44_36_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_13_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_15_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_16_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_17_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_19_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_20_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_21_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_23_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_24_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_26_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/right/WIN_20240401_05_43_56_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/right/WIN_20240401_05_43_57_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/right/WIN_20240401_05_43_58_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/right/WIN_20240401_05_44_00_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/right/WIN_20240401_05_44_01_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/right/WIN_20240401_05_44_02_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/up/WIN_20240401_05_44_04_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/up/WIN_20240401_05_44_07_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/up/WIN_20240401_05_44_08_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/up/WIN_20240401_05_44_09_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/up/WIN_20240401_05_44_11_Pro.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/up/WIN_20240401_05_44_12_Pro.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gaze_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/gaze_detection.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,22 +61,26 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.MLModel.executor": "Run",
     "Python.gaze_detection.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/miste/PycharmProjects/CSC_450_Project/.venv",
+    "last_opened_file_path": "C:/Users/miste/PycharmProjects/CSC_450_Project/data",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "settings.editor.selected.configurable": "settings.sync",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\miste\PycharmProjects\CSC_450_Project\data" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\miste\PycharmProjects\CSC_450_Project" />
     </key>
@@ -94,15 +127,40 @@
       <updated>1708959163177</updated>
       <workItem from="1708959165583" duration="2509000" />
       <workItem from="1708961698561" duration="266000" />
-      <workItem from="1708962188661" duration="675000" />
+      <workItem from="1708962188661" duration="995000" />
+      <workItem from="1709825375129" duration="3571000" />
+      <workItem from="1711968582887" duration="1294000" />
     </task>
+    <task id="LOCAL-00001" summary="gazeDetection">
+      <option name="closed" value="true" />
+      <created>1708963171569</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708963171569</updated>
+    </task>
+    <task id="LOCAL-00002" summary="gazeDetection implement head pose estimation">
+      <option name="closed" value="true" />
+      <created>1709828809306</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709828809306</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="gazeDetection" />
+    <MESSAGE value="gazeDetection implement head pose estimation" />
+    <option name="LAST_COMMIT_MESSAGE" value="gazeDetection implement head pose estimation" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CSC_450_Project$gaze_detection.coverage" NAME="gaze_detection Coverage Results" MODIFIED="1708962412862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSC_450_Project$main.coverage" NAME="main Coverage Results" MODIFIED="1708962396327" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSC_450_Project$gaze_detection.coverage" NAME="gaze_detection Coverage Results" MODIFIED="1711968650579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSC_450_Project$main.coverage" NAME="main Coverage Results" MODIFIED="1709825408432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSC_450_Project$MLModel.coverage" NAME="MLModel Coverage Results" MODIFIED="1711974614223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
