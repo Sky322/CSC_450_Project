@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2902a2d-6d8d-4d1b-9f5d-190ab32ebc25" name="Changes" comment="gazeDetection add more data to dataset">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MLModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cnnModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnnModel.py" afterDir="false" />
+    <list default="true" id="f2902a2d-6d8d-4d1b-9f5d-190ab32ebc25" name="Changes" comment="gazeDetection save model to pickle to use in other places">
+      <change beforePath="$PROJECT_DIR$/gaze_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/gaze_detection.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +113,7 @@
       <workItem from="1711968582887" duration="7232000" />
       <workItem from="1712928686913" duration="3510000" />
       <workItem from="1713285341321" duration="1091000" />
-      <workItem from="1713357492763" duration="1861000" />
+      <workItem from="1713357492763" duration="1955000" />
     </task>
     <task id="LOCAL-00001" summary="gazeDetection">
       <option name="closed" value="true" />
@@ -157,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713358702346</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="gazeDetection save model to pickle to use in other places">
+      <option name="closed" value="true" />
+      <created>1713359400561</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713359400561</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +174,8 @@
     <MESSAGE value="gazeDetection implement head pose estimation" />
     <MESSAGE value="gazeDetection implement machine learning model" />
     <MESSAGE value="gazeDetection add more data to dataset" />
-    <option name="LAST_COMMIT_MESSAGE" value="gazeDetection add more data to dataset" />
+    <MESSAGE value="gazeDetection save model to pickle to use in other places" />
+    <option name="LAST_COMMIT_MESSAGE" value="gazeDetection save model to pickle to use in other places" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/CSC_450_Project$cnnModel.coverage" NAME="cnnModel Coverage Results" MODIFIED="1713358753700" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

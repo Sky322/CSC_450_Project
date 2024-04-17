@@ -77,11 +77,13 @@ while cap.isOpened():
                 connection_drawing_spec=drawing_spec)
     cv2.imshow('Head Pose Estimation', img)
 
-    timer -= 1
-    if timer <= 0:
-        cv2.imwrite('currentData/photoright '+str(count)+'.jpg', img)
-        count+= 1
-        timer = 20
+    # uncomment to save pictures to add to dataset
+    # timer -= 1
+    # if timer <= 0:
+    #     cv2.imwrite('currentData/photoright '+str(count)+'.jpg', img)
+    #     count+= 1
+    #     timer = 20
+
     if cv2.waitKey(5) & 0xFF == 27:
         break
 cap.release()
