@@ -17,7 +17,7 @@ train_size = int(len(data)*0.7)
 val_size = int(len(data)*0.2)
 test_size = int(len(data)*0.1)
 
-print(train_size, val_size, test_size)
+print(train_size, val_size, test_size,int(len(data)))
 
 
 
