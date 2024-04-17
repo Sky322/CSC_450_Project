@@ -1,6 +1,7 @@
 import cv2
 import mediapipe as mp
 import numpy as np
+import pickle
 
 currentData = []
 count = 0
@@ -62,8 +63,6 @@ while cap.isOpened():
             y = angles[1] * 360
             z = angles[2] * 360
 
-            #add variable to store where person is looking
-
             nose_3d_projection, jacobian = cv2.projectPoints(nose_3d, rot_vec, trans_vec, cam_matrix, dist_matrix)
 
             p1 = (int(nose_2d[0]), int(nose_2d[1]))
@@ -80,9 +79,9 @@ while cap.isOpened():
 
     timer -= 1
     if timer <= 0:
-        cv2.imwrite('currentData/photo'+str(count)+'.jpg',img)
+        cv2.imwrite('currentData/photoright '+str(count)+'.jpg', img)
         count+= 1
-        timer = 60
+        timer = 20
     if cv2.waitKey(5) & 0xFF == 27:
         break
 cap.release()

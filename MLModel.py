@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score
-
+import pickle
 
 # prepare data
 input_dir = 'C:\\Users\\miste\\PycharmProjects\\CSC_450_Project\\data'

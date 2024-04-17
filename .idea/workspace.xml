@@ -5,138 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2902a2d-6d8d-4d1b-9f5d-190ab32ebc25" name="Changes" comment="gazeDetection implement machine learning model">
-      <change afterPath="$PROJECT_DIR$/data/center/photo0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/center/photo1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/center/photo10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/center/photo11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/center/photo12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/center/photo13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/center/photo14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/center/photo15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/center/photo16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/center/photo17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/center/photo2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/center/photo3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/center/photo4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/center/photo5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/center/photo6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/center/photo7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/center/photo8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/center/photo9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/down/photo9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/left/photo9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo15.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo19.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/right/photo9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/up/photo0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/up/photo1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/up/photo10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/up/photo11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/up/photo12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/up/photo13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/up/photo14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/up/photo2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/up/photo3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/up/photo4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/up/photo5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/up/photo6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/up/photo7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/up/photo8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/up/photo9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cnnModel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MLModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/MLModel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/center/WIN_20240401_05_43_52_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/center/WIN_20240401_05_43_53_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/center/WIN_20240401_05_43_54_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/down/WIN_20240401_05_44_27_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/down/WIN_20240401_05_44_29_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/down/WIN_20240401_05_44_30_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/down/WIN_20240401_05_44_31_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/down/WIN_20240401_05_44_32_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/down/WIN_20240401_05_44_33_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/down/WIN_20240401_05_44_35_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/down/WIN_20240401_05_44_36_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_13_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_15_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_16_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_17_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_19_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_20_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_21_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_23_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_24_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/left/WIN_20240401_05_44_26_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/right/WIN_20240401_05_43_56_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/right/WIN_20240401_05_43_57_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/right/WIN_20240401_05_43_58_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/right/WIN_20240401_05_44_00_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/right/WIN_20240401_05_44_01_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/right/WIN_20240401_05_44_02_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/up/WIN_20240401_05_44_04_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/up/WIN_20240401_05_44_07_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/up/WIN_20240401_05_44_08_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/up/WIN_20240401_05_44_09_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/up/WIN_20240401_05_44_11_Pro.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/up/WIN_20240401_05_44_12_Pro.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/gaze_detection.py" beforeDir="false" afterPath="$PROJECT_DIR$/gaze_detection.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -150,24 +34,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.MLModel.executor": "Run",
-    "Python.gaze_detection.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/miste/PycharmProjects/CSC_450_Project/data/right",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.sync",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.MLModel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.cnnModel.executor&quot;: &quot;Run&quot;,
+    &quot;Python.gaze_detection.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/miste/PycharmProjects/CSC_450_Project/data/right&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\miste\PycharmProjects\CSC_450_Project\data\right" />
@@ -177,6 +62,9 @@
       <recent name="C:\Users\miste\PycharmProjects\CSC_450_Project\data\left" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\miste\PycharmProjects\CSC_450_Project\data\up" />
+      <recent name="C:\Users\miste\PycharmProjects\CSC_450_Project\data\down" />
+      <recent name="C:\Users\miste\PycharmProjects\CSC_450_Project\data\center" />
       <recent name="C:\Users\miste\PycharmProjects\CSC_450_Project" />
     </key>
   </component>
@@ -224,7 +112,10 @@
       <workItem from="1708961698561" duration="266000" />
       <workItem from="1708962188661" duration="995000" />
       <workItem from="1709825375129" duration="3571000" />
-      <workItem from="1711968582887" duration="5965000" />
+      <workItem from="1711968582887" duration="7232000" />
+      <workItem from="1712928686913" duration="3510000" />
+      <workItem from="1713285341321" duration="1091000" />
+      <workItem from="1713357492763" duration="1165000" />
     </task>
     <task id="LOCAL-00001" summary="gazeDetection">
       <option name="closed" value="true" />
@@ -250,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711974741350</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="gazeDetection implement machine learning model">
+      <option name="closed" value="true" />
+      <created>1711981323371</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711981323371</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,8 +162,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="gazeDetection implement machine learning model" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CSC_450_Project$gaze_detection.coverage" NAME="gaze_detection Coverage Results" MODIFIED="1711981210947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSC_450_Project$main.coverage" NAME="main Coverage Results" MODIFIED="1709825408432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CSC_450_Project$MLModel.coverage" NAME="MLModel Coverage Results" MODIFIED="1711981276411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSC_450_Project$cnnModel.coverage" NAME="cnnModel Coverage Results" MODIFIED="1713285773306" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSC_450_Project$gaze_detection.coverage" NAME="gaze_detection Coverage Results" MODIFIED="1713358490143" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSC_450_Project$main.coverage" NAME="main Coverage Results" MODIFIED="1713357851825" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CSC_450_Project$MLModel.coverage" NAME="MLModel Coverage Results" MODIFIED="1713357890802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
