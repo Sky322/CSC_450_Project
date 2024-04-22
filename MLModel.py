@@ -10,8 +10,8 @@ from sklearn.metrics import accuracy_score
 import pickle
 
 # prepare data
-input_dir = 'C:\\Users\\miste\\PycharmProjects\\CSC_450_Project\\data'
-categories = ['right', 'left', 'center', 'up', 'down']
+input_dir = './data'
+categories = ['center', 'down', 'left', 'right', 'up']
 
 data = []
 labels = []
@@ -37,7 +37,6 @@ parameters = [{'gamma': [0.01, 0.001, 0.0001], 'C': [1, 10, 100, 1000]}]
 grid_search = GridSearchCV(classifier, parameters)
 
 grid_search.fit(x_train, y_train)
-
 # test performance
 best_estimator = grid_search.best_estimator_
 
@@ -46,5 +45,4 @@ y_prediction = best_estimator.predict(x_test)
 score = accuracy_score(y_prediction, y_test)
 
 print('{}% of samples were correctly classified'.format(str(score * 100)))
-
-pickle.dump(best_estimator, open('./model.p', 'wb'))
+pickle.dump(best_estimator, open('./model.pkl', 'wb'))
