@@ -5,7 +5,7 @@ import tensorflow as tf
 from keras.src.saving import load_model
 from skimage.transform import resize
 from skimage.io import imread
-import pickle
+
 
 currentData = []
 dirData = []
@@ -15,11 +15,11 @@ mp_face_mesh = mp.solutions.face_mesh
 face_mesh = mp_face_mesh.FaceMesh(min_detection_confidence=0.5, min_tracking_confidence=0.5)
 
 # variable to load machine learning model
-# SVCModel = pickle.load(open('./model.pkl', 'rb'))
 CNNModel = load_model('cnnModel.keras')
+
 mp_drawing = mp.solutions.drawing_utils
 
-drawing_spec = mp_drawing.DrawingSpec(thickness=1, circle_radius=1)
+drawing_spec = mp_drawing.DrawingSpec(thickness=0, circle_radius=0)
 
 cap = cv2.VideoCapture(0)
 while cap.isOpened():
@@ -69,7 +69,7 @@ while cap.isOpened():
             y = angles[1] * 360
             z = angles[2] * 360
 
-            nose_3d_projection, jacobian = cv2.projectPoints(nose_3d, rot_vec, trans_vec, cam_matrix, dist_matrix)
+            # nose_3d_projection, jacobian = cv2.projectPoints(nose_3d, rot_vec, trans_vec, cam_matrix, dist_matrix)
 
             p1 = (int(nose_2d[0]), int(nose_2d[1]))
             p2 = (int(nose_2d[0] + y * 10), int(nose_2d[1] - x * 10))
@@ -89,9 +89,6 @@ while cap.isOpened():
         cv2.imwrite('currentData/photo.jpg', img)
         predictImg = imread('currentData/photo.jpg')
         predictImg = tf.image.resize(predictImg, (256, 256))
-        # predictImg = resize(predictImg, (15, 15))
-        # predictImg = predictImg.flatten()
-        # direction = SVCModel.predict(predictImg.flatten().reshape(1,-1))[1]
         direction = np.argmax(CNNModel.predict(np.expand_dims(predictImg/255, 0)))
 
         if direction == 0:
@@ -105,7 +102,6 @@ while cap.isOpened():
         elif direction == 4:
             print('up')
         timer = 60
-        # print(direction)
 
     if cv2.waitKey(5) & 0xFF == 27:
         break
